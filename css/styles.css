@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Padauk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+/* 
+================
+Variables
+================
+*/
+:root {
+  --clr-grey-1: #102a42;
+  --clr-grey-5: #617d98;
+  --clr-grey-10: #f1f5f8;
+  --clr-white: #fff;
+  --transition: all 0.3s linear;
+  --radius: 20px;
+  --ff-primary: "Spectral";
+  --ff-acme: "Acme";
+  --ff-handwriting: "Dancing Script";
+  --ff-amatic: "Amatic SC";
+  --ff-monts: "Montserrat";
+  --ff-curvy: "Homemade Apple", cursive;
+}
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 2rem;
+  font-size: 1.25rem;
+  font-family: var(--ff-monts);
+  background: var(--clr-white);
+}
+img {
+  width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+/* more global styles */
+.quote {
+  font-family: var(--ff-handwriting);
+  padding: 1rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  max-width: 70rem;
+  display: block;
+  margin: 0 auto;
+}
+.text {
+  font-family: var(--ff-monts);
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: justify;
+  max-width: 70rem;
+  display: block;
+}
+/* 
+===========
+Header
+===========
+*/
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.header h1 {
+  font-family: var(--ff-curvy);
+  padding: 3rem;
+}
+.header p {
+  margin-top: 1rem;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .discography {
+    max-width: 900px;
+  }
+}
+/* 
+===========
+Discography
+===========
+*/
+.discography {
+  background: var(--clr-grey-10);
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: var(--radius);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+.discography:hover {
+  transform: scale(1.02);
+}
+.discography ul {
+  font-family: var(--ff-amatic);
+  list-style-type: none;
+}
+.discography h2 {
+  padding-bottom: 0.5rem;
+}
+/* 
+=============
+Videos
+=============
+*/
+.btn {
+  display: block;
+  transition: var(--transition);
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+.youtube-icon {
+  background: white;
+  color: red;
+  font-size: 5rem;
+}
+/* 
+==============
+Footer
+==============
+*/
+.footer {
+  background: var(--clr-grey-1);
+  color: var(--clr-white);
+  height: 120px;
+  text-align: center;
+  padding-top: 2.5rem;
+  text-transform: capitalize;
+  font-family: var(--ff-primary);
+}
+.social-icon {
+  color: var(--clr-white);
+  font-size: 1rem;
+  margin-right: 1rem;
+  transition: var(--transition);
+}
+.social-icon:hover {
+  color: var(--clr-grey-5);
+}
+.footer-text {
+  margin-top: 0.25rem;
+  text-transform: uppercase;
+  color: var(--clr-white);
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+.project-name {
+  color: var(--clr-grey-5);
+}
